@@ -1,0 +1,13 @@
+{
+  "name": "cruise-widget-data",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/",
+    "update": "node scripts/update.js asuka3"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0"
+  }
+}
