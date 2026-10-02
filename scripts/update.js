@@ -20,15 +20,18 @@ const lastRunPath = path.join(ROOT, 'ledger', 'last-run.json');
 const readJson = (p) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null);
 const writeJson = (p, v) => fs.writeFileSync(p, JSON.stringify(v, null, 2) + '\n');
 
-async function fetchOfficial(unknown) {
+async function fetchOfficial(unknown, errors) {
   const o = cfg.official;
   const list = parseOfficialList((await get(o.listUrl)).text);
   const cruises = [];
   const marks = {};
   for (const c of list) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(c.depart || '')) { errors.push(`official:${c.id}: 出発日が取れない`); continue; }
     const page = await get(`${o.base}/cruise/${c.id}/`);
     if (!page.url.includes(o.shipPath)) continue; // 別の船
-    const cells = parseOfficialDetail(page.text).map((t) => {
+    const texts = parseOfficialDetail(page.text);
+    if (texts.length === 0) unknown.push(`official:${c.id}: 空室表示が0件`);
+    const cells = texts.map((t) => {
       const r = textToMark(t);
       if (r.unknown) unknown.push(`official:${t}`);
       return r.mark;
@@ -66,7 +69,8 @@ async function fetchBest1(unknown) {
   const marks = {};
   const urls = {};
   for (const row of list) {
-    const texts = parseBest1Detail((await get(a.base + row.path)).text, row.depart);
+    const { texts, fallback } = parseBest1Detail((await get(a.base + row.path)).text, row.depart);
+    if (fallback) unknown.push(`best1:${row.depart}:日付の表が見つからない`);
     const cells = texts.map((t) => {
       const r = textToMark(t, a.statusOverride);
       if (r.unknown) unknown.push(`best1:${t}`);
@@ -87,7 +91,7 @@ async function main() {
 
   // 公式はクルーズの正本。失敗したら公開しない
   try {
-    const off = await fetchOfficial(unknown);
+    const off = await fetchOfficial(unknown, errors);
     run.cruises = off.cruises;
     run.marks.official = off.marks;
   } catch (e) {

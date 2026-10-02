@@ -17,15 +17,17 @@ function parseBest1List(html, linkPrefix) {
   return out;
 }
 
-// 詳細：td#online<YYYYMMDD> の次の tr.open 内の料金表。各行の最初の td.cell-strong が状態
+// 詳細：td#online<YYYYMMDD> の次の tr.open 内の料金表。見つからず先頭の表で代用したら fallback:true。各行の最初の td.cell-strong が状態
 function parseBest1Detail(html, depart) {
   const $ = cheerio.load(html);
   const key = depart.replace(/-/g, '');
   let table = $(`td#online${key}`).closest('tr').next('tr').find('table.other_price_list').first();
-  if (table.length === 0) table = $('table.other_price_list').first();
-  return table.find('tr').slice(1).map((_, tr) => (
+  let fallback = false;
+  if (table.length === 0) { table = $('table.other_price_list').first(); fallback = true; }
+  const texts = table.find('tr').slice(1).map((_, tr) => (
     $(tr).find('td.cell-strong').first().text().replace(/\s+/g, '')
   )).get().filter((t) => t !== '');
+  return { texts, fallback };
 }
 
 module.exports = { parseBest1List, parseBest1Detail };

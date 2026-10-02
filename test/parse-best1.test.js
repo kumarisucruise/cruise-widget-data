@@ -15,7 +15,14 @@ test('ベストワン一覧：出発日と詳細パスの組', () => {
 });
 
 test('ベストワン詳細：客室ごとの状態の文言', () => {
-  const texts = parseBest1Detail(fx('best1-detail.html'), '2026-11-04');
+  const { texts, fallback } = parseBest1Detail(fx('best1-detail.html'), '2026-11-04');
+  assert.strictEqual(fallback, false);
   assert.ok(texts.length >= 5, `客室数 ${texts.length}`);
   texts.forEach((t) => assert.ok(t.length > 0));
+});
+
+test('ベストワン詳細：日付の表が見つからなければ先頭の表で代用し fallback:true', () => {
+  const r = parseBest1Detail(fx('best1-detail.html'), '2030-01-01');
+  assert.strictEqual(r.fallback, true);
+  assert.ok(r.texts.length >= 5);
 });
