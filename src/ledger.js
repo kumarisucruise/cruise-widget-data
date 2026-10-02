@@ -39,11 +39,17 @@ function mergeRun(prev, run, today, ship, display) {
 }
 
 // 先週あった未来の日程が、売り切れでもないのに消えていたら返す
-function checkVanished(prev, run, today, allowRemove) {
+// 公式は締切（出発の約20日前）で一覧から外すため、today+cutoffDays より先の日程だけを点検対象にする
+function addDays(iso, n) {
+  return new Date(Date.parse(iso) + n * 86400000).toISOString().slice(0, 10);
+}
+
+function checkVanished(prev, run, today, allowRemove, cutoffDays) {
   if (!prev) return [];
+  const limit = addDays(today, cutoffDays || 0);
   const now = new Set(run.cruises.map((c) => c.depart));
   return Object.values(prev.cruises)
-    .filter((c) => c.depart > today)
+    .filter((c) => c.depart > limit)
     .filter((c) => !c.soldout_at)
     .filter((c) => !c.missing_since)
     .filter((c) => !now.has(c.depart))
@@ -56,4 +62,4 @@ function checkDrop(prevCount, nowCount) {
   return prevCount > 0 ? nowCount < prevCount / 2 : false;
 }
 
-module.exports = { mergeRun, checkVanished, checkDrop };
+module.exports = { mergeRun, checkVanished, checkDrop, addDays };

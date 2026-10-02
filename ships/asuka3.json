@@ -18,7 +18,8 @@
   "official": {
     "listUrl": "https://plan.asukacruise.co.jp/cruise/",
     "base": "https://plan.asukacruise.co.jp",
-    "shipPath": "/asuka3/"
+    "shipPath": "/asuka3/",
+    "listCutoffDays": 28
   },
   "newDays": 14,
   "staleDays": 10

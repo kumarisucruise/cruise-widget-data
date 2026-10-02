@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert');
-const { mergeRun, checkVanished, checkDrop } = require('../src/ledger');
+const { mergeRun, checkVanished, checkDrop, addDays } = require('../src/ledger');
 
 const DISPLAY = ['his', 'best1', 'jtb'];
 const cruise = (depart) => ({ depart, days: 4, port: '横浜', course: `c${depart}` });
@@ -60,13 +60,27 @@ test('checkVanished：未来の・売り切れでない日程が消えたらエ�
   const r1 = { cruises: [cruise('2026-11-04'), cruise('2026-11-08')], marks: {}, urls: {}, failed: [] };
   const prev = mergeRun(null, r1, '2026-10-08', 'asuka3', DISPLAY);
   const run = { cruises: [cruise('2026-11-04')] };
-  assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', []), ['2026-11-08']);
-  assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', ['2026-11-08']), []);
-  assert.deepStrictEqual(checkVanished(prev, run, '2026-11-10', []), [], '出発済みは対象外');
+  assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', [], 0), ['2026-11-08']);
+  assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', ['2026-11-08'], 0), []);
+  assert.deepStrictEqual(checkVanished(prev, run, '2026-11-10', [], 0), [], '出発済みは対象外');
 });
 
 test('checkDrop：件数が前回の半分未満ならエラー', () => {
   assert.strictEqual(checkDrop(30, 14), true);
   assert.strictEqual(checkDrop(30, 15), false);
   assert.strictEqual(checkDrop(0, 0), false);
+});
+
+test('addDays：ISO日付に日数を足す', () => {
+  assert.strictEqual(addDays('2026-10-15', 28), '2026-11-12');
+  assert.strictEqual(addDays('2026-12-20', 14), '2027-01-03');
+});
+
+test('checkVanished：締切カットオフ内（出発まで28日以内）の消失は無視、それより先は報告', () => {
+  const r1 = { cruises: [cruise('2026-11-08'), cruise('2026-12-20')], marks: {}, urls: {}, failed: [] };
+  const prev = mergeRun(null, r1, '2026-10-08', 'asuka3', DISPLAY);
+  const run = { cruises: [] };
+  // 今日10/15 → カットオフ 11/12。11/8 は範囲内（無視）、12/20 は範囲外（報告）
+  assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', [], 28), ['2026-12-20']);
+  assert.deepStrictEqual(checkVanished(prev, { cruises: [cruise('2026-12-20')] }, '2026-10-15', [], 28), []);
 });

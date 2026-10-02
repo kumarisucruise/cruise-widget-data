@@ -6,7 +6,7 @@ const { textToMark, aggregate } = require('../src/marks');
 const { parseOfficialList, parseOfficialDetail } = require('../src/parse-official');
 const { parseHisSearch, parseHisDetail } = require('../src/parse-his');
 const { parseBest1List, parseBest1Detail } = require('../src/parse-best1');
-const { mergeRun, checkVanished, checkDrop } = require('../src/ledger');
+const { mergeRun, checkVanished, checkDrop, addDays } = require('../src/ledger');
 const { buildFeed } = require('../src/build');
 
 const ROOT = path.join(__dirname, '..');
@@ -106,10 +106,12 @@ async function main() {
   const allow = (process.env.ALLOW_REMOVE || '').split(',').filter(Boolean);
   let blocking = errors.some((e) => e.startsWith('official:'));
   if (!blocking) {
-    const vanished = checkVanished(prev, run, today, allow);
+    const cutoff = cfg.official.listCutoffDays || 0;
+    const limit = addDays(today, cutoff); // 締切で公式一覧から消える範囲は比較しない
+    const vanished = checkVanished(prev, run, today, allow, cutoff);
     if (vanished.length) { blocking = true; errors.push(`消失: ${vanished.join(', ')}（意図的なら ALLOW_REMOVE）`); }
-    const prevCount = prev ? Object.values(prev.cruises).filter((c) => c.depart > today).filter((c) => !c.missing_since).length : 0;
-    const nowCount = run.cruises.filter((c) => c.depart > today).length;
+    const prevCount = prev ? Object.values(prev.cruises).filter((c) => c.depart > limit).filter((c) => !c.missing_since).length : 0;
+    const nowCount = run.cruises.filter((c) => c.depart > limit).length;
     if (checkDrop(prevCount, nowCount)) { blocking = true; errors.push(`急減: ${prevCount} → ${nowCount}`); }
   }
   if (unknown.length) errors.push(`知らない文言・アイコン: ${[...new Set(unknown)].join(' / ')}`);
