@@ -13,10 +13,14 @@ function linkFor(agentId, cfg, entry) {
 }
 
 function buildFeed(ledger, cfg, today) {
+  // その回に失敗・無効な社は「全社 null」判定から除く。判定対象が残らなければ除外しない
+  const skip = new Set(ledger.lastFailed || []);
+  const checked = cfg.display.filter((id) => !skip.has(id) && cfg.agents[id].enabled !== false);
   const cruises = Object.values(ledger.cruises)
     .filter((c) => c.depart > today)
     .filter((c) => !c.soldout_at)
     .filter((c) => !c.missing_since)
+    .filter((c) => checked.length === 0 || checked.some((id) => (c.marks || {})[id]))
     .sort((x, y) => (x.depart < y.depart ? -1 : 1))
     .map((c) => {
       const st = {};

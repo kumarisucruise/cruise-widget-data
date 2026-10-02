@@ -50,3 +50,31 @@ test('agents は表示順で label と asp を持つ', () => {
   assert.strictEqual(feed.agents[0].asp, 'afb');
   assert.strictEqual(feed.staleDays, 10);
 });
+
+test('全表示社の記号が null の日程は出さない（失敗・無効の社は数えない）', () => {
+  const nul = { official: 'ok', his: null, best1: null, jtb: null };
+  const led = { initialized: '2026-10-01', cruises: {
+    '2026-11-04': entry('2026-11-04', { marks: nul }),
+    '2026-12-01': entry('2026-12-01'),
+  } };
+  assert.deepStrictEqual(buildFeed(led, cfg, '2026-10-15').cruises.map((c) => c.depart), ['2026-12-01']);
+});
+
+test('一部の社が null でも、他の社に記号があれば出す', () => {
+  const led = { initialized: '2026-10-01', cruises: {
+    '2026-11-04': entry('2026-11-04', { marks: { official: 'ok', his: 'ok', best1: null, jtb: null } }),
+  } };
+  assert.strictEqual(buildFeed(led, cfg, '2026-10-15').cruises.length, 1);
+});
+
+test('その回に失敗した社は null 判定から除く。取得できた社がすべて null なら除外', () => {
+  const nul = { official: 'ok', his: null, best1: null, jtb: null };
+  const led = { initialized: '2026-10-01', lastFailed: ['his'], cruises: { '2026-11-04': entry('2026-11-04', { marks: nul }) } };
+  assert.strictEqual(buildFeed(led, cfg, '2026-10-15').cruises.length, 0, 'best1 は成功して null → 除外');
+});
+
+test('全社が失敗した週は日程を除外しない（フィードが空になるのを防ぐ）', () => {
+  const nul = { official: 'ok', his: null, best1: null, jtb: null };
+  const led = { initialized: '2026-10-01', lastFailed: ['his', 'best1'], cruises: { '2026-11-04': entry('2026-11-04', { marks: nul }) } };
+  assert.strictEqual(buildFeed(led, cfg, '2026-10-15').cruises.length, 1);
+});

@@ -84,3 +84,9 @@ test('checkVanished：締切カットオフ内（出発まで28日以内）の�
   assert.deepStrictEqual(checkVanished(prev, run, '2026-10-15', [], 28), ['2026-12-20']);
   assert.deepStrictEqual(checkVanished(prev, { cruises: [cruise('2026-12-20')] }, '2026-10-15', [], 28), []);
 });
+
+test('mergeRun：その回の failed を lastFailed として台帳に残す', () => {
+  const run = { cruises: [cruise('2026-11-04')], marks: {}, urls: {}, failed: ['his'] };
+  assert.deepStrictEqual(mergeRun(null, run, '2026-10-08', 'asuka3', DISPLAY).lastFailed, ['his']);
+  assert.deepStrictEqual(mergeRun(null, { cruises: [], marks: {} }, '2026-10-08', 'asuka3', DISPLAY).lastFailed, []);
+});

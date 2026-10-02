@@ -2,6 +2,7 @@
 function mergeRun(prev, run, today, ship, display) {
   const led = prev ? JSON.parse(JSON.stringify(prev)) : { ship, initialized: today, updated: today, cruises: {} };
   led.updated = today;
+  led.lastFailed = run.failed || []; // 公開フィードの「全社 null」判定から除くため
   const failed = new Set(run.failed || []);
   const agents = ['official'].concat(display);
   const seen = new Set();
