@@ -21,16 +21,17 @@ function parseHisSearch(html) {
 // 催行決定はアイコンなし・選択可能（is-disabled でない）
 function parseHisDetail(html) {
   const $ = cheerio.load(html);
-  const cells = $('a.c-calendar__week-col[data-date]');
+  const cells = $('a.c-calendar__week-col[data-date]').filter((_, a) => /^\d{8}$/.test($(a).attr('data-date') || ''));
   const withIcon = cells.filter((_, a) => ($(a).find('img.c-calendar__availability').attr('src') || '').trim() !== '');
   if (withIcon.length > 0) {
     return withIcon.map((_, a) => {
-      const r = hisIconToMark($(a).find('img.c-calendar__availability').attr('src'));
-      return { depart: toIso($(a).attr('data-date')), mark: r.mark, unknown: r.unknown };
+      const src = $(a).find('img.c-calendar__availability').attr('src').trim();
+      const r = hisIconToMark(src);
+      return { depart: toIso($(a).attr('data-date')), mark: r.mark, unknown: r.unknown, icon: src.split('/').pop() };
     }).get();
   }
   return cells.not('.is-disabled').map((_, a) => (
-    { depart: toIso($(a).attr('data-date')), mark: 'ok', unknown: false }
+    { depart: toIso($(a).attr('data-date')), mark: 'ok', unknown: false, fallback: true }
   )).get();
 }
 

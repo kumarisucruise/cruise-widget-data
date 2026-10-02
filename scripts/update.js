@@ -39,7 +39,7 @@ async function fetchOfficial(unknown) {
   return { cruises, marks };
 }
 
-async function fetchHis(unknown) {
+async function fetchHis(unknown, notes) {
   const a = cfg.agents.his;
   const first = parseHisSearch((await get(a.searchUrl + '1')).text);
   let codes = first.codes;
@@ -49,8 +49,11 @@ async function fetchHis(unknown) {
   if (codes.length !== first.total) throw new Error(`HIS 商品数の不一致 ${codes.length}/${first.total}`);
   const marks = {};
   for (const code of codes) {
-    for (const r of parseHisDetail((await get(a.detailUrl + code)).text)) {
-      if (r.unknown) unknown.push(`his:${code}`);
+    const rows = parseHisDetail((await get(a.detailUrl + code)).text);
+    if (rows.length !== 1) unknown.push(`his:${code}:rows=${rows.length}`);
+    for (const r of rows) {
+      if (r.unknown) unknown.push(`his:${code}:${r.icon}`);
+      if (r.fallback) notes.push(`his:${code}:催行決定(アイコンなし)要確認`);
       marks[r.depart] = aggregate([marks[r.depart], r.mark]);
     }
   }
@@ -78,6 +81,7 @@ async function fetchBest1(unknown) {
 async function main() {
   const errors = [];
   const unknown = [];
+  const notes = [];
   const failed = [];
   const run = { cruises: [], marks: {}, urls: {}, failed };
 
@@ -94,7 +98,7 @@ async function main() {
   for (const id of cfg.display) {
     if (cfg.agents[id].enabled === false) continue;
     try {
-      const r = await fetchers[id](unknown);
+      const r = await fetchers[id](unknown, notes);
       assertOverlap(id, r.marks, run.cruises.filter((c) => c.depart > today).map((c) => c.depart));
       run.marks[id] = r.marks;
       if (r.urls) run.urls[id] = r.urls;
@@ -124,8 +128,8 @@ async function main() {
     writeJson(feedPath, buildFeed(led, cfg, today));
   }
   // 毎週必ず書く（変化がなくても commit が発生し、60日停止を防ぐ）
-  writeJson(lastRunPath, { date: today, ship, published: !blocking, failed, errors });
-  console.log(JSON.stringify({ published: !blocking, cruises: run.cruises.length, failed, errors }, null, 2));
+  writeJson(lastRunPath, { date: today, ship, published: !blocking, failed, errors, notes });
+  console.log(JSON.stringify({ published: !blocking, cruises: run.cruises.length, failed, errors, notes }, null, 2));
   process.exitCode = errors.length ? 1 : 0;
 }
 
