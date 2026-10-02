@@ -1,0 +1,633 @@
+{
+  "ship": "asuka3",
+  "initialized": "2026-10-03",
+  "updated": "2026-10-03",
+  "cruises": {
+    "2026-10-23": {
+      "depart": "2026-10-23",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "〜飛鳥クルーズ就航35周年記念〜 神戸発着 秋の週末 アニバーサリークルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111873.html"
+      }
+    },
+    "2026-10-26": {
+      "depart": "2026-10-26",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発 秋の瀬戸内 広島・博多クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111960.html"
+      }
+    },
+    "2026-10-29": {
+      "depart": "2026-10-29",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "博多",
+      "course": "博多発着 秋めく済州島 ウィークエンドクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_HKP_111964.html"
+      }
+    },
+    "2026-11-01": {
+      "depart": "2026-11-01",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "博多",
+      "course": "博多発 秋の新宮・横浜クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_HKP_111876.html"
+      }
+    },
+    "2026-11-04": {
+      "depart": "2026-11-04",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "few",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 5,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 秋彩る 八戸・仙台クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_5D_YOK_111945.html"
+      }
+    },
+    "2026-11-08": {
+      "depart": "2026-11-08",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "few",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 6,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 秋彩る 日向・鹿児島クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_6D_YOK_111946.html"
+      }
+    },
+    "2026-11-13": {
+      "depart": "2026-11-13",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 7,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 瀬戸内航路 秋の中津・尾道糸崎クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_7D_YOK_111881.html"
+      }
+    },
+    "2026-11-23": {
+      "depart": "2026-11-23",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 7,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 錦秋の瀬戸内 姫路・防府クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_7D_YOK_111931.html"
+      }
+    },
+    "2026-11-29": {
+      "depart": "2026-11-29",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 秋の蒲郡・神戸クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_YOK_111925.html"
+      }
+    },
+    "2026-12-03": {
+      "depart": "2026-12-03",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 6,
+      "port": "神戸",
+      "course": "Xmas 神戸発着 小笠原クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_6D_UKB_111927.html"
+      }
+    },
+    "2026-12-08": {
+      "depart": "2026-12-08",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "Xmas 神戸発着 高知クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D__111865.html"
+      }
+    },
+    "2026-12-13": {
+      "depart": "2026-12-13",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "神戸",
+      "course": "Xmas 神戸・東京ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D__111880.html"
+      }
+    },
+    "2026-12-15": {
+      "depart": "2026-12-15",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "東京",
+      "course": "Xmas 東京発着 ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D_TYO_111908.html"
+      }
+    },
+    "2026-12-17": {
+      "depart": "2026-12-17",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "few",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "東京",
+      "course": "Xmas 東京・名古屋ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D_TYO_111867.html"
+      }
+    },
+    "2026-12-19": {
+      "depart": "2026-12-19",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "名古屋",
+      "course": "Xmas 名古屋発着 小松島ウィークエンドクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_NGP_111912.html"
+      }
+    },
+    "2026-12-23": {
+      "depart": "2026-12-23",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "Xmas 横浜発着 四日市クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_YOK_111913.html"
+      }
+    },
+    "2026-12-26": {
+      "depart": "2026-12-26",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": null,
+        "jtb": null
+      },
+      "days": 10,
+      "port": "横浜",
+      "course": "紺碧の海 グアム・サイパン ニューイヤークルーズ",
+      "urls": {}
+    },
+    "2027-01-05": {
+      "depart": "2027-01-05",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 新春の駿河・神戸クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_YOK_111872.html"
+      }
+    },
+    "2027-01-08": {
+      "depart": "2027-01-08",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 連休 高知クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111874.html"
+      }
+    },
+    "2027-01-11": {
+      "depart": "2027-01-11",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "神戸",
+      "course": "新春の神戸・長崎ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D_UKB_111875.html"
+      }
+    },
+    "2027-02-05": {
+      "depart": "2027-02-05",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "博多",
+      "course": "博多発 早春の新宮・横浜クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_HKP_111878.html"
+      }
+    },
+    "2027-02-08": {
+      "depart": "2027-02-08",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "早春の四日市クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D__111996.html"
+      }
+    },
+    "2027-02-11": {
+      "depart": "2027-02-11",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "横浜",
+      "course": "早春の休日 横浜ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D_YOK_111997.html"
+      }
+    },
+    "2027-02-13": {
+      "depart": "2027-02-13",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 3,
+      "port": "横浜",
+      "course": "早春の週末 横浜ショートクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_3D_YOK_111947.html"
+      }
+    },
+    "2027-02-16": {
+      "depart": "2027-02-16",
+      "first_seen": "2026-10-03",
+      "soldout_at": "2026-10-03",
+      "missing_since": null,
+      "marks": {
+        "official": "ng",
+        "his": "ng",
+        "best1": null,
+        "jtb": null
+      },
+      "days": 22,
+      "port": "横浜",
+      "course": "～飛鳥クルーズ就航35周年記念～2027年 パシフィック ディスカバリークルーズ",
+      "urls": {}
+    },
+    "2027-03-11": {
+      "depart": "2027-03-11",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "few",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 8,
+      "port": "神戸",
+      "course": "神戸発着 春の種子島・沖縄・奄美クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_8D_UKB_111948.html"
+      }
+    },
+    "2027-03-19": {
+      "depart": "2027-03-19",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 春の連休 高知クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111949.html"
+      }
+    },
+    "2027-03-22": {
+      "depart": "2027-03-22",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 6,
+      "port": "神戸",
+      "course": "神戸発着 陽春の別府・門司・福江クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_6D_UKB_111978.html"
+      }
+    },
+    "2027-03-27": {
+      "depart": "2027-03-27",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 春の週末 日向クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111979.html"
+      }
+    },
+    "2027-03-30": {
+      "depart": "2027-03-30",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発 春の下田・横浜クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_UKB_111980.html"
+      }
+    },
+    "2027-04-02": {
+      "depart": "2027-04-02",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "春彩る 駿河ウィークエンドクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_YOK_111991.html"
+      }
+    },
+    "2027-04-05": {
+      "depart": "2027-04-05",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 5,
+      "port": "横浜",
+      "course": "春彩る ひたちなか・小名浜クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_5D_YOK_111992.html"
+      }
+    },
+    "2027-04-09": {
+      "depart": "2027-04-09",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 4,
+      "port": "横浜",
+      "course": "陽春の週末 鳥羽クルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_4D_YOK_111994.html"
+      }
+    },
+    "2027-04-13": {
+      "depart": "2027-04-13",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "ok",
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 9,
+      "port": "横浜",
+      "course": "春爛漫 函館・みちのくクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_9D_YOK_111995.html"
+      }
+    },
+    "2027-04-22": {
+      "depart": "2027-04-22",
+      "first_seen": "2026-10-03",
+      "soldout_at": null,
+      "missing_since": null,
+      "marks": {
+        "official": "few",
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "days": 8,
+      "port": "横浜",
+      "course": "春めぐり 室蘭・東北・ひたちなかクルーズ",
+      "urls": {
+        "best1": "/B/ASUKATH/NI__ASUKATH_ASUTH_8D_YOK_111993.html"
+      }
+    }
+  }
+}

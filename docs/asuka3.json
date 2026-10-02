@@ -1,0 +1,603 @@
+{
+  "ship": "asuka3",
+  "label": "飛鳥III",
+  "updated": "2026-10-03",
+  "staleDays": 10,
+  "agents": [
+    {
+      "id": "his",
+      "label": "HIS",
+      "asp": "afb"
+    },
+    {
+      "id": "best1",
+      "label": "ベストワン",
+      "asp": "a8"
+    },
+    {
+      "id": "jtb",
+      "label": "JTB",
+      "asp": "vc"
+    }
+  ],
+  "cruises": [
+    {
+      "depart": "2026-10-23",
+      "days": 4,
+      "port": "神戸",
+      "course": "〜飛鳥クルーズ就航35周年記念〜 神戸発着 秋の週末 アニバーサリークルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111873.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-10-26",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発 秋の瀬戸内 広島・博多クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111960.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-10-29",
+      "days": 4,
+      "port": "博多",
+      "course": "博多発着 秋めく済州島 ウィークエンドクルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_HKP_111964.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-01",
+      "days": 4,
+      "port": "博多",
+      "course": "博多発 秋の新宮・横浜クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_HKP_111876.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-04",
+      "days": 5,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 秋彩る 八戸・仙台クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_YOK_111945.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-08",
+      "days": 6,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 秋彩る 日向・鹿児島クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_111946.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-13",
+      "days": 7,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 瀬戸内航路 秋の中津・尾道糸崎クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_111881.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-23",
+      "days": 7,
+      "port": "横浜",
+      "course": "〜知の賢人× ASUKAⅢ〜 錦秋の瀬戸内 姫路・防府クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_111931.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-11-29",
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 秋の蒲郡・神戸クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111925.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-03",
+      "days": 6,
+      "port": "神戸",
+      "course": "Xmas 神戸発着 小笠原クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_UKB_111927.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-08",
+      "days": 4,
+      "port": "神戸",
+      "course": "Xmas 神戸発着 高知クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111865.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-13",
+      "days": 3,
+      "port": "神戸",
+      "course": "Xmas 神戸・東京ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D__111880.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-15",
+      "days": 3,
+      "port": "東京",
+      "course": "Xmas 東京発着 ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_TYO_111908.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-17",
+      "days": 3,
+      "port": "東京",
+      "course": "Xmas 東京・名古屋ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_TYO_111867.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-19",
+      "days": 4,
+      "port": "名古屋",
+      "course": "Xmas 名古屋発着 小松島ウィークエンドクルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_NGP_111912.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-23",
+      "days": 4,
+      "port": "横浜",
+      "course": "Xmas 横浜発着 四日市クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111913.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2026-12-26",
+      "days": 10,
+      "port": "横浜",
+      "course": "紺碧の海 グアム・サイパン ニューイヤークルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": null,
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": null,
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-01-05",
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 新春の駿河・神戸クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111872.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-01-08",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 連休 高知クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111874.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-01-11",
+      "days": 3,
+      "port": "神戸",
+      "course": "新春の神戸・長崎ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_UKB_111875.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-02-05",
+      "days": 4,
+      "port": "博多",
+      "course": "博多発 早春の新宮・横浜クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_HKP_111878.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-02-08",
+      "days": 4,
+      "port": "横浜",
+      "course": "早春の四日市クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111996.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-02-11",
+      "days": 3,
+      "port": "横浜",
+      "course": "早春の休日 横浜ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_YOK_111997.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-02-13",
+      "days": 3,
+      "port": "横浜",
+      "course": "早春の週末 横浜ショートクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_YOK_111947.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-03-11",
+      "days": 8,
+      "port": "神戸",
+      "course": "神戸発着 春の種子島・沖縄・奄美クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D_UKB_111948.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-03-19",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 春の連休 高知クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111949.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-03-22",
+      "days": 6,
+      "port": "神戸",
+      "course": "神戸発着 陽春の別府・門司・福江クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_UKB_111978.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-03-27",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 春の週末 日向クルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111979.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-03-30",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発 春の下田・横浜クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111980.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-02",
+      "days": 4,
+      "port": "横浜",
+      "course": "春彩る 駿河ウィークエンドクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111991.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-05",
+      "days": 5,
+      "port": "横浜",
+      "course": "春彩る ひたちなか・小名浜クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_YOK_111992.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-09",
+      "days": 4,
+      "port": "横浜",
+      "course": "陽春の週末 鳥羽クルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111994.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-13",
+      "days": 9,
+      "port": "横浜",
+      "course": "春爛漫 函館・みちのくクルーズ",
+      "new": false,
+      "st": {
+        "his": "ok",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_9D_YOK_111995.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-22",
+      "days": 8,
+      "port": "横浜",
+      "course": "春めぐり 室蘭・東北・ひたちなかクルーズ",
+      "new": false,
+      "st": {
+        "his": "ans",
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D_YOK_111993.html",
+        "jtb": null
+      }
+    }
+  ]
+}
