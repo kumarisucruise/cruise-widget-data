@@ -8,6 +8,7 @@ const { parseHisSearch, parseHisDetail } = require('../src/parse-his');
 const { parseBest1List, parseBest1Detail } = require('../src/parse-best1');
 const { mergeRun, checkVanished, checkDrop, addDays } = require('../src/ledger');
 const { buildFeed } = require('../src/build');
+const { assertOverlap } = require('../src/checks');
 
 const ROOT = path.join(__dirname, '..');
 const ship = process.argv[2];
@@ -94,6 +95,7 @@ async function main() {
     if (cfg.agents[id].enabled === false) continue;
     try {
       const r = await fetchers[id](unknown);
+      assertOverlap(id, r.marks, run.cruises.filter((c) => c.depart > today).map((c) => c.depart));
       run.marks[id] = r.marks;
       if (r.urls) run.urls[id] = r.urls;
     } catch (e) {
