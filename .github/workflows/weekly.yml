@@ -1,0 +1,42 @@
+name: weekly-update
+on:
+  schedule:
+    - cron: '0 19 * * 3'   # 毎週木曜 04:00 JST（判定日に「アクセス最多曜日の前日」へ変える）
+  workflow_dispatch:
+    inputs:
+      allow_remove:
+        description: '消失を許可する出発日（例 2026-11-08,2026-11-20）'
+        required: false
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      # 解析のテストは各社ページのコピー（手元だけに置く）が要るので、ここでは動かさない
+      - run: npm run test:ci
+      - id: upd
+        continue-on-error: true
+        run: node scripts/update.js asuka3
+        env:
+          ALLOW_REMOVE: ${{ github.event.inputs.allow_remove }}
+      - name: commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ledger docs
+          git commit -m "data: weekly update $(date -u +%F)" || echo "no changes"
+          git push
+      - name: fail if update failed (GitHub sends mail)
+        if: steps.upd.outcome == 'failure'
+        run: |
+          cat ledger/last-run.json
+          exit 1

@@ -5,6 +5,7 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "test": "node --test \"test/*.test.js\"",
+    "test:ci": "node --test test/marks.test.js test/ledger.test.js test/build.test.js test/checks.test.js",
     "update": "node scripts/update.js asuka3"
   },
   "dependencies": {
