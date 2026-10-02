@@ -12,7 +12,7 @@ const { assertOverlap } = require('../src/checks');
 
 const ROOT = path.join(__dirname, '..');
 const ship = process.argv[2];
-const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'ships', `${ship}.json`), 'utf8'));
+let cfg; // main() 内で読む（読み込み失敗も catch して last-run.json を書くため）
 const today = new Date(Date.now() + 9 * 3600000).toISOString().slice(0, 10); // JST
 const ledgerPath = path.join(ROOT, 'ledger', `${ship}.json`);
 const feedPath = path.join(ROOT, 'docs', `${ship}.json`);
@@ -83,6 +83,7 @@ async function fetchBest1(unknown) {
 }
 
 async function main() {
+  cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'ships', `${ship}.json`), 'utf8'));
   const errors = [];
   const unknown = [];
   const notes = [];
