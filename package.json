@@ -4,7 +4,7 @@
   "type": "commonjs",
   "engines": { "node": ">=20" },
   "scripts": {
-    "test": "node --test test/",
+    "test": "node --test \"test/*.test.js\"",
     "update": "node scripts/update.js asuka3"
   },
   "dependencies": {
