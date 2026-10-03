@@ -1,13 +1,13 @@
-<div class="asw" id="asw" data-ship="asuka3" data-page="asuka-status" data-nosnippet>
+<div class="asw" id="asw" data-ship="asuka3" data-nosnippet>
   <div class="asw-head"><b>飛鳥III 販売中のクルーズと旅行会社別の空室</b><span id="asw-upd">空室は毎週更新</span></div>
   <div class="asw-bar">
     <select id="asw-month" aria-label="出発月"><option value="">出発月：すべて</option></select>
     <select id="asw-port" aria-label="発着港"><option value="">発着港：すべて</option></select>
     <span class="asw-hint" id="asw-hint"></span>
-    <span class="asw-lg"><span class="ok">○</span>予約可 <span class="few">△</span>残りわずか <span class="ng">✕</span>満室・キャンセル待ち <span class="ans">◇</span>リクエスト（申込後に回答） <span class="na">－</span>取扱なし <span class="new">NEW</span>2週間以内に追加</span>
+    <details class="asw-key" id="asw-key"><summary>記号の見方</summary><span class="asw-lg"><span class="r"><span class="ok">○</span>：予約可　<span class="few">△</span>：残りわずか　<span class="na">－</span>：取扱なし</span><span class="r"><span class="ng">✕</span>：満室・キャンセル待ち</span><span class="r"><span class="ans">◇</span>：リクエスト（申込後に回答）</span><span class="r"><span class="new">NEW</span>：2週間以内に追加</span></span></details>
   </div>
   <div class="asw-scroll"><table><thead><tr id="asw-th"><th class="c-date">日程</th><th>クルーズ名</th></tr></thead><tbody id="asw-list"><tr><td colspan="5" class="asw-msg">読み込み中…</td></tr></tbody></table></div>
-  <div class="asw-foot">記号は更新日時点の目安です。最新の空室・料金は各社で確認してください。どの会社でも申し込めなくなったクルーズは載せていません。</div>
+  <details class="asw-foot" id="asw-note"><summary>ご利用上の注意</summary>記号は更新日時点の目安です。最新の空室・料金は各社で確認してください。どの会社でも申し込めなくなったクルーズは載せていません。</details>
 </div>
 <style>
 .asw{font-size:12px;border:1px solid #c9d1da;border-radius:6px;overflow:hidden;background:#fff;margin:12px 0;color:#1d2733}
@@ -16,7 +16,7 @@
 .asw-bar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:5px 8px;border-bottom:1px solid #e1e6eb}
 .asw-bar select{font-size:11px;padding:2px 4px;border:1px solid #e1e6eb;border-radius:4px;background:#fff}
 .asw-hint{font-size:10px;color:#5d6b7a;width:100%}
-.asw-lg{display:flex;gap:8px;color:#5d6b7a;font-size:11px;flex-wrap:wrap}
+.asw-lg{display:block;color:#5d6b7a;font-size:11px}.asw-lg .r{display:block}
 .asw-scroll{max-height:176px;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .asw table{border-collapse:collapse;width:100%;table-layout:fixed;margin:0}
 .asw th{position:sticky;top:0;background:#dde7f3;font-weight:600;text-align:left;padding:3px 6px;border:0;border-bottom:1px solid #c9d1da;z-index:1}
@@ -31,12 +31,21 @@
 .asw .asw-msg{text-align:center;color:#5d6b7a;padding:12px}
 .asw-foot{padding:3px 8px;font-size:10px;color:#5d6b7a;background:#fafbfc;border-top:1px solid #e1e6eb}
 @media (max-width:480px){.asw .c-name{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.35}.asw .c-date{width:62px}.asw .c-date br{display:inline}.asw .c-ag{width:40px}}
+/* テーマの表スタイル（padding12px・罫線・line-height）に負けないよう #asw で上書き */
+#asw table{border:0!important;margin:0!important}
+#asw th,#asw td{padding:3px 6px!important;border:0!important;border-bottom:1px solid #e1e6eb!important;line-height:1.4!important;font-size:12px!important}
+#asw th{border-bottom:1px solid #c9d1da!important;font-size:11px!important}
+#asw .asw-lg,#asw .asw-hint{line-height:1.5}
+@media (max-width:480px){#asw .asw-head{flex-direction:column;align-items:flex-start;gap:2px}#asw .asw-head b{font-size:12px;line-height:1.4}#asw .asw-head span{white-space:normal;font-size:10px}#asw .asw-scroll{max-height:260px}#asw th,#asw td{padding:3px 2px!important}#asw .c-ag{width:50px}#asw th.c-ag{font-size:9px!important;line-height:1.2!important}#asw .c-date{width:64px}}
+#asw .asw-key{width:100%}#asw .asw-key summary{cursor:pointer;font-size:11px;font-weight:600;color:#16324f;line-height:1.5}#asw .asw-key .asw-lg{margin-top:2px}
+#asw .asw-foot summary{cursor:pointer;font-weight:600;color:#16324f;font-size:10px;line-height:1.5}
+#asw .asw-lg{display:block}#asw .asw-lg .r{display:block}
 </style>
 <script>
 (function(){
   var FEED = 'https://kumarisucruise.github.io/cruise-widget-data/asuka3.json';
   var root = document.getElementById('asw');
-  var page = root.getAttribute('data-page');
+  var page = root.getAttribute('data-page') || location.pathname.replace(/\/+$/, '').split('/').pop() || 'home';
   var verb = page === 'asuka3-price' ? '料金と空室' : '空室';
   var MARK = {ok:'○', few:'△', ng:'✕', ans:'◇'};
   var WD = ['日','月','火','水','木','金','土'];
@@ -47,6 +56,7 @@
   var feed = null;
   var stale = false;
   document.getElementById('asw-hint').textContent = '記号をタップすると、各社の' + verb + 'のページを開きます';
+  if (window.innerWidth > 480) { document.getElementById('asw-key').open = true; document.getElementById('asw-note').open = true; }
 
   // 読み込み時には送らない（操作したときだけ）
   function track(name, params){
