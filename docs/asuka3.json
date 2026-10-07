@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "label": "飛鳥III",
-  "updated": "2026-10-03",
+  "updated": "2026-10-08",
   "staleDays": 10,
   "agents": [
     {
@@ -21,40 +21,6 @@
     }
   ],
   "cruises": [
-    {
-      "depart": "2026-10-23",
-      "days": 4,
-      "port": "神戸",
-      "course": "〜飛鳥クルーズ就航35周年記念〜 神戸発着 秋の週末 アニバーサリークルーズ",
-      "new": false,
-      "st": {
-        "his": "ok",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111873.html",
-        "jtb": null
-      }
-    },
-    {
-      "depart": "2026-10-26",
-      "days": 4,
-      "port": "神戸",
-      "course": "神戸発 秋の瀬戸内 広島・博多クルーズ",
-      "new": false,
-      "st": {
-        "his": "ans",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111960.html",
-        "jtb": null
-      }
-    },
     {
       "depart": "2026-10-29",
       "days": 4,

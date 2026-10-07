@@ -1,8 +1,10 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-08",
   "ship": "asuka3",
   "published": true,
   "failed": [],
-  "errors": [],
+  "errors": [
+    "知らない文言・アイコン: best1:2026-10-04:日付の表が見つからない"
+  ],
   "notes": []
 }

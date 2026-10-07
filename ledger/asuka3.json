@@ -1,16 +1,16 @@
 {
   "ship": "asuka3",
   "initialized": "2026-10-03",
-  "updated": "2026-10-03",
+  "updated": "2026-10-08",
   "cruises": {
     "2026-10-23": {
       "depart": "2026-10-23",
       "first_seen": "2026-10-03",
-      "soldout_at": null,
+      "soldout_at": "2026-10-08",
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ng",
         "best1": "ans",
         "jtb": null
       },
@@ -24,11 +24,11 @@
     "2026-10-26": {
       "depart": "2026-10-26",
       "first_seen": "2026-10-03",
-      "soldout_at": null,
+      "soldout_at": "2026-10-08",
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ans",
+        "his": "ng",
         "best1": "ans",
         "jtb": null
       },
@@ -81,7 +81,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "few",
+        "official": "ng",
         "his": "ans",
         "best1": "ans",
         "jtb": null
