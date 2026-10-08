@@ -68,7 +68,10 @@ async function fetchBest1(unknown) {
   const list = parseBest1List((await get(a.listUrl)).text, a.linkPrefix);
   const marks = {};
   const urls = {};
+  // 出発済みのクルーズは詳細ページに日付の表が無い（解析エラー扱いになる）ので、日本時間の今日より前の出発日は見ない
+  const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
   for (const row of list) {
+    if (row.depart < today) continue;
     const { texts, fallback } = parseBest1Detail((await get(a.base + row.path)).text, row.depart);
     if (fallback) unknown.push(`best1:${row.depart}:日付の表が見つからない`);
     const cells = texts.map((t) => {
