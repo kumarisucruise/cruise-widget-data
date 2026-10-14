@@ -1,8 +1,10 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-15",
   "ship": "asuka3",
   "published": true,
   "failed": [],
-  "errors": [],
+  "errors": [
+    "知らない文言・アイコン: official:102363: 空室表示が0件"
+  ],
   "notes": []
 }
