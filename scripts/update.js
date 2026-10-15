@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { get } = require('../src/http');
 const { textToMark, aggregate } = require('../src/marks');
-const { parseOfficialList, parseOfficialDetail } = require('../src/parse-official');
+const { parseOfficialList, parseOfficialDetail, countOfficialPriceRows } = require('../src/parse-official');
 const { parseHisSearch, parseHisDetail } = require('../src/parse-his');
 const { parseBest1List, parseBest1Detail } = require('../src/parse-best1');
 const { mergeRun, checkVanished, checkDrop, addDays } = require('../src/ledger');
@@ -20,7 +20,7 @@ const lastRunPath = path.join(ROOT, 'ledger', 'last-run.json');
 const readJson = (p) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null);
 const writeJson = (p, v) => fs.writeFileSync(p, JSON.stringify(v, null, 2) + '\n');
 
-async function fetchOfficial(unknown, errors) {
+async function fetchOfficial(unknown, errors, notes) {
   const o = cfg.official;
   const list = parseOfficialList((await get(o.listUrl)).text);
   const cruises = [];
@@ -30,7 +30,11 @@ async function fetchOfficial(unknown, errors) {
     const page = await get(`${o.base}/cruise/${c.id}/`);
     if (!page.url.includes(o.shipPath)) continue; // 別の船
     const texts = parseOfficialDetail(page.text);
-    if (texts.length === 0) unknown.push(`official:${c.id}: 空室表示が0件`);
+    if (texts.length === 0) {
+      // 発売前（価格表に行が無い）は異常にしない。価格表に行があるのに空室の行が無いときだけエラーにする
+      if (countOfficialPriceRows(page.text) === 0) notes.push(`official:${c.id}: 発売前（価格表なし）${c.depart}`);
+      else unknown.push(`official:${c.id}: 空室表示が0件`);
+    }
     const cells = texts.map((t) => {
       const r = textToMark(t);
       if (r.unknown) unknown.push(`official:${t}`);
@@ -95,7 +99,7 @@ async function main() {
 
   // 公式はクルーズの正本。失敗したら公開しない
   try {
-    const off = await fetchOfficial(unknown, errors);
+    const off = await fetchOfficial(unknown, errors, notes);
     run.cruises = off.cruises;
     run.marks.official = off.marks;
   } catch (e) {

@@ -31,4 +31,10 @@ function parseOfficialDetail(html) {
     .filter((t) => t !== '' && t !== '-');
 }
 
-module.exports = { parseOfficialList, parseOfficialDetail };
+// 価格表の行数。発売前のクルーズは price-table はあるが行が0件（空室表示が無いのは異常ではない）
+function countOfficialPriceRows(html) {
+  const $ = cheerio.load(html);
+  return $('table.price-table tr').length;
+}
+
+module.exports = { parseOfficialList, parseOfficialDetail, countOfficialPriceRows };
