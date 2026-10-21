@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "label": "飛鳥III",
-  "updated": "2026-10-16",
+  "updated": "2026-10-22",
   "staleDays": 10,
   "agents": [
     {
@@ -22,35 +22,18 @@
   ],
   "cruises": [
     {
-      "depart": "2026-11-08",
-      "days": 6,
-      "port": "横浜",
-      "course": "〜知の賢人× ASUKAⅢ〜 秋彩る 日向・鹿児島クルーズ",
-      "new": false,
-      "st": {
-        "his": "ans",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_111946.html",
-        "jtb": null
-      }
-    },
-    {
       "depart": "2026-11-13",
       "days": 7,
       "port": "横浜",
       "course": "〜知の賢人× ASUKAⅢ〜 瀬戸内航路 秋の中津・尾道糸崎クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_111881.html",
         "jtb": null
       }
@@ -62,12 +45,12 @@
       "course": "〜知の賢人× ASUKAⅢ〜 錦秋の瀬戸内 姫路・防府クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_111931.html",
         "jtb": null
       }
@@ -79,12 +62,12 @@
       "course": "横浜発 秋の蒲郡・神戸クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111925.html",
         "jtb": null
       }
@@ -96,12 +79,12 @@
       "course": "Xmas 神戸発着 高知クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111865.html",
         "jtb": null
       }
@@ -113,12 +96,12 @@
       "course": "Xmas 神戸・東京ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D__111880.html",
         "jtb": null
       }
@@ -130,12 +113,12 @@
       "course": "Xmas 東京発着 ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_TYO_111908.html",
         "jtb": null
       }
@@ -147,12 +130,12 @@
       "course": "Xmas 東京・名古屋ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_TYO_111867.html",
         "jtb": null
       }
@@ -164,12 +147,12 @@
       "course": "Xmas 名古屋発着 小松島ウィークエンドクルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_NGP_111912.html",
         "jtb": null
       }
@@ -181,30 +164,13 @@
       "course": "Xmas 横浜発着 四日市クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111913.html",
-        "jtb": null
-      }
-    },
-    {
-      "depart": "2026-12-26",
-      "days": 10,
-      "port": "横浜",
-      "course": "紺碧の海 グアム・サイパン ニューイヤークルーズ",
-      "new": false,
-      "st": {
-        "his": "ok",
-        "best1": null,
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": null,
         "jtb": null
       }
     },
@@ -215,12 +181,12 @@
       "course": "横浜発 新春の駿河・神戸クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111872.html",
         "jtb": null
       }
@@ -232,12 +198,12 @@
       "course": "神戸発着 連休 高知クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111874.html",
         "jtb": null
       }
@@ -249,12 +215,12 @@
       "course": "新春の神戸・長崎ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_UKB_111875.html",
         "jtb": null
       }
@@ -266,12 +232,12 @@
       "course": "博多発 早春の新宮・横浜クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_HKP_111878.html",
         "jtb": null
       }
@@ -283,12 +249,12 @@
       "course": "早春の四日市クルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111996.html",
         "jtb": null
       }
@@ -300,12 +266,12 @@
       "course": "早春の休日 横浜ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_YOK_111997.html",
         "jtb": null
       }
@@ -317,12 +283,12 @@
       "course": "早春の週末 横浜ショートクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_YOK_111947.html",
         "jtb": null
       }
@@ -334,12 +300,12 @@
       "course": "神戸発着 春の連休 高知クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111949.html",
         "jtb": null
       }
@@ -351,12 +317,12 @@
       "course": "神戸発着 陽春の別府・門司・福江クルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_UKB_111978.html",
         "jtb": null
       }
@@ -368,12 +334,12 @@
       "course": "神戸発着 春の週末 日向クルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111979.html",
         "jtb": null
       }
@@ -385,12 +351,12 @@
       "course": "神戸発 春の下田・横浜クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_111980.html",
         "jtb": null
       }
@@ -402,12 +368,12 @@
       "course": "春彩る 駿河ウィークエンドクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111991.html",
         "jtb": null
       }
@@ -419,12 +385,12 @@
       "course": "春彩る ひたちなか・小名浜クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_YOK_111992.html",
         "jtb": null
       }
@@ -436,12 +402,12 @@
       "course": "陽春の週末 鳥羽クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_111994.html",
         "jtb": null
       }
@@ -453,12 +419,12 @@
       "course": "春爛漫 函館・みちのくクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_9D_YOK_111995.html",
         "jtb": null
       }
@@ -470,12 +436,12 @@
       "course": "春めぐり 室蘭・東北・ひたちなかクルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": null,
         "best1": "ans",
         "jtb": null
       },
       "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
+        "his": null,
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D_YOK_111993.html",
         "jtb": null
       }
