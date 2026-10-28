@@ -1,0 +1,154 @@
+<div class="ptw" id="ptw" data-nosnippet>
+  <div class="ptw-head"><b id="ptw-title">今日・明日のクルーズ船</b><span id="ptw-upd"></span></div>
+  <div id="ptw-body"><div class="ptw-msg">読み込み中…</div></div>
+</div>
+<style>
+.ptw{border:2px solid #0f8b8d;border-radius:10px;padding:8px 10px;margin:12px 0;font-size:14px;line-height:1.45;background:#fff}
+.ptw-head{display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.ptw-head b{color:#1b2a41}
+.ptw-head span{font-size:11px;color:#6b7684;white-space:nowrap}
+.ptw-row{border-top:1px solid #e3e6ea;padding:4px 0}
+.ptw-day{font-weight:700;color:#0f8b8d;margin-right:6px}
+.ptw-t{font-size:12px;color:#2b333d}
+.ptw-l{display:inline-block;font-size:11px;line-height:1.5;padding:0 6px;border-radius:9px;background:#f1f3f5;margin-left:4px;vertical-align:1px}
+.ptw-l.live{background:#eafaf0;color:#1f9d55;font-weight:700}
+/* 閉じた状態を180px以内に収めるため、2週間の予定と公式リンクは1行に並べる */
+.ptw-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 8px;border-top:1px solid #e3e6ea;padding-top:2px}
+.ptw-foot details{flex:1 1 auto}
+.ptw-foot details[open]{flex-basis:100%}
+.ptw details summary{cursor:pointer;color:#0f8b8d;font-weight:600;font-size:13px;padding:2px 0}
+.ptw ul{margin:2px 0 4px;padding-left:1.1em;font-size:13px}
+.ptw-note,.ptw-msg{font-size:11px;color:#6b7684}
+.ptw-msg{font-size:12px;margin-top:4px}
+</style>
+<script>// 港ウィジェットの計算部分。widget/port-today-widget.html に埋め込まれる（scripts/build-port-widget.js）。
+// 時刻はすべて日本時間。データの日時は 'YYYY-MM-DDTHH:MM'（JST・タイムゾーンなし）。
+(function (root, factory) {
+  if (typeof module === 'object' && module.exports) module.exports = factory();
+  else root.PortTodayLogic = factory();
+})(typeof self !== 'undefined' ? self : this, function () {
+  var DAY = 86400000;
+  var JST = 9 * 3600000;
+  function toMs(s) { return Date.parse(s + ':00+09:00'); }
+  function jstDayKey(ms) { return new Date(ms + JST).toISOString().slice(0, 10); }
+  function addDays(key, n) {
+    var d = new Date(key + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() + n);
+    return d.toISOString().slice(0, 10);
+  }
+  function endMs(c) { return c.dep ? toMs(c.dep) : toMs(c.arr.slice(0, 10) + 'T23:59'); }
+  function callsOn(calls, key) {
+    var s = toMs(key + 'T00:00'), e = s + DAY;
+    return calls.filter(function (c) { return toMs(c.arr) < e && endMs(c) >= s; });
+  }
+  function status(c, now) {
+    var a = toMs(c.arr);
+    if (now < a - 2 * 3600000) return 'before';
+    if (now < a) return 'soon';
+    if (now <= endMs(c)) return 'in_port';
+    return 'departed';
+  }
+  function nextCall(calls, now) {
+    var from = toMs(addDays(jstDayKey(now), 2) + 'T00:00');
+    for (var i = 0; i < calls.length; i++) if (toMs(calls[i].arr) >= from) return calls[i];
+    return null;
+  }
+  function isStale(fetchedAt, now) { return now - toMs(fetchedAt + 'T00:00') >= 8 * DAY; }
+  function eventsWithin(events, now, days) {
+    var k = jstDayKey(now), last = addDays(k, days);
+    return events.filter(function (e) { return e.date >= k && e.date < last; });
+  }
+  function callsWithin(calls, now, days) {
+    var s = toMs(jstDayKey(now) + 'T00:00'), e = s + days * DAY;
+    return calls.filter(function (c) { return toMs(c.arr) < e && endMs(c) >= s; });
+  }
+  return { toMs: toMs, jstDayKey: jstDayKey, addDays: addDays, callsOn: callsOn, status: status,
+    nextCall: nextCall, isStale: isStale, eventsWithin: eventsWithin, callsWithin: callsWithin };
+});
+</script>
+<script>
+(function(){
+  var FEED = 'https://kumarisucruise.github.io/cruise-widget-data/ports-today.json';
+  var PAGES = {'hiroshima-port':'hiroshima','kagoshima-port':'kagoshima','naha-port':'naha_tomari8'};
+  var L = window.PortTodayLogic;
+  var root = document.getElementById('ptw');
+  var slug = root.getAttribute('data-page') || location.pathname.replace(/\/+$/, '').split('/').pop();
+  var key = PAGES[slug];
+  if (!key || !L) { root.style.display = 'none'; return; }
+  var WD = ['日','月','火','水','木','金','土'];
+  var ST = {soon:'まもなく入港', in_port:'🟢いま停泊中', departed:'出港済み'};
+  var body = document.getElementById('ptw-body');
+  // 読み込み時には送らない（タップしたときだけ）。アフィリエイトのイベントとは名前を分ける
+  function track(action){ if (typeof gtag === 'function') gtag('event', 'port_widget_tap', {port: key, action: action}); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function safeUrl(u){ return (typeof u === 'string' && u.indexOf('https://') === 0) ? u : null; }
+  function hm(s){ return s ? Number(s.slice(11,13)) + ':' + s.slice(14,16) : '未発表'; }
+  function mdw(k){ var d = new Date(k + 'T00:00:00Z'); return (d.getUTCMonth()+1) + '/' + d.getUTCDate() + '(' + WD[d.getUTCDay()] + ')'; }
+  function ship(c){
+    var id = /^#[A-Za-z0-9_-]+$/.test(c.anchor || '') ? c.anchor.slice(1) : '';
+    if (id && document.getElementById(id)) return '<a href="#' + id + '" data-act="ship_link">' + esc(c.ship) + '</a>';
+    return esc(c.ship);
+  }
+  function labels(c, now, live){
+    var h = '';
+    if (live) { var s = L.status(c, now); if (ST[s]) h += '<span class="ptw-l' + (s === 'in_port' ? ' live' : '') + '">' + ST[s] + '</span>'; }
+    if (c.first_call) h += '<span class="ptw-l">★初寄港</span>';
+    if (c.capacity) h += '<span class="ptw-l">' + (c.capacity >= 3000 ? '大型 ' : '') + c.capacity.toLocaleString() + '人</span>';
+    if (c.together) h += '<span class="ptw-l">2隻同時</span>';
+    return h;
+  }
+  function dayRow(label, list, now, live, emptyHtml){
+    if (!list.length) return '<div class="ptw-row"><span class="ptw-day">' + label + '</span>' + emptyHtml + '</div>';
+    return list.map(function(c){
+      return '<div class="ptw-row"><span class="ptw-day">' + label + '</span>' + ship(c) + labels(c, now, live)
+        + '<div class="ptw-t">' + hm(c.arr) + '入港 → ' + hm(c.dep) + '出港' + (c.berth ? ' ／ ' + esc(c.berth) : '') + '</div></div>';
+    }).join('');
+  }
+  function render(feed){
+    var p = feed.ports && feed.ports[key];
+    if (!p) { root.style.display = 'none'; return; }
+    var now = Date.now(), today = L.jstDayKey(now), tom = L.addDays(today, 1);
+    var off = safeUrl(p.source_url);
+    var offLink = off ? '<a href="' + esc(off) + '" target="_blank" rel="noopener" data-act="official_link">公式で確認</a>' : '';
+    // 港名は直上の見出しにあるので、ここでは出さない（1行に収める）
+    document.getElementById('ptw-title').textContent = '⚓ 今日・明日のクルーズ船';
+    var f = p.fetched_at.split('-');
+    document.getElementById('ptw-upd').textContent = Number(f[1]) + '/' + Number(f[2]) + '時点・毎週更新';
+    if (L.isStale(p.fetched_at, now)) {
+      body.innerHTML = '<div class="ptw-msg">予定の更新が遅れています。最新の予定は記事内の表か、' + offLink + 'してください。</div>';
+      return;
+    }
+    var nx = L.nextCall(p.calls, now);
+    var none = '入港予定はありません' + (nx ? '<div class="ptw-t">次の入港：' + mdw(nx.arr.slice(0,10)) + ' ' + ship(nx) + '</div>' : '');
+    var h = dayRow('今日', L.callsOn(p.calls, today), now, true, '入港予定はありません')
+          + dayRow('明日', L.callsOn(p.calls, tom), now, false, none);
+    var ev = L.eventsWithin(p.events || [], now, 14).slice(0, 2);
+    if (ev.length) {
+      h += '<div class="ptw-row">' + ev.map(function(e){
+        var u = safeUrl(e.url);
+        var t = esc('📣 ' + mdw(e.date) + ' ' + e.type + '：' + e.title);
+        return '<div class="ptw-t">' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener" data-act="event_link">' + t + '</a>' : t) + '</div>';
+      }).join('') + '</div>';
+    }
+    var two = L.callsWithin(p.calls, now, 14);
+    h += '<div class="ptw-foot">';
+    if (two.length) {
+      h += '<details id="ptw-more"><summary>2週間の予定を開く</summary><ul>' + two.map(function(c){
+        return '<li>' + mdw(c.arr.slice(0,10)) + ' ' + ship(c) + ' ' + hm(c.arr) + '〜' + hm(c.dep) + '</li>';
+      }).join('') + '</ul></details>';
+    }
+    h += '<span class="ptw-note">変更・中止あり' + (offLink ? ' → ' + offLink : '') + '</span></div>';
+    body.innerHTML = h;
+    var more = document.getElementById('ptw-more');
+    if (more) more.addEventListener('toggle', function(){ if (more.open) track('expand'); });
+  }
+  root.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('[data-act]');
+    if (a) track(a.getAttribute('data-act'));
+  });
+  fetch(FEED, {cache: 'no-cache'}).then(function(r){
+    if (!r.ok) throw new Error('feed ' + r.status);
+    return r.json();
+  }).then(render).catch(function(){ root.style.display = 'none'; });
+})();
+</script>

@@ -1,0 +1,459 @@
+{
+ "generated_at": "2026-10-29T07:17+09:00",
+ "ports": {
+  "hiroshima": {
+   "name": "広島港",
+   "fetched_at": "2026-10-29",
+   "source_url": "https://www.pref.hiroshima.lg.jp/soshiki/221/cruise-joho.html",
+   "calls": [
+    {
+     "arr": "2026-11-02T08:00",
+     "dep": "2026-11-02T18:00",
+     "ship": "ルミナラ",
+     "capacity": 452,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#trc",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-03T10:00",
+     "dep": "2026-11-03T19:00",
+     "ship": "スター・シーカー",
+     "capacity": 224,
+     "berth": "宇品外貿第５バース",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-07T06:00",
+     "dep": "2026-11-07T19:00",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-09T08:00",
+     "dep": "2026-11-09T18:00",
+     "ship": "シーボーン アンコール",
+     "capacity": 600,
+     "berth": "宇品外貿第５バース",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-12T08:00",
+     "dep": "2026-11-12T23:59",
+     "ship": "ウエステルダム",
+     "capacity": 1964,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#holland",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-17T07:00",
+     "dep": "2026-11-17T16:00",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-25T09:00",
+     "dep": "2026-11-25T18:00",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-04T07:00",
+     "dep": "2026-12-04T16:00",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-18T09:00",
+     "dep": "2026-12-18T17:00",
+     "ship": "三井オーシャンさくら",
+     "capacity": 458,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#mof",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-19T09:30",
+     "dep": "2026-12-19T20:00",
+     "ship": "イースタン・ヴィーナス",
+     "capacity": 532,
+     "berth": "宇品外貿第５バース",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-21T09:00",
+     "dep": "2026-12-21T17:00",
+     "ship": "三井オーシャンさくら",
+     "capacity": 458,
+     "berth": "宇品外貿第５バース",
+     "anchor": "#mof",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-26T08:30",
+     "dep": "2026-12-26T20:00",
+     "ship": "イースタン・ヴィーナス",
+     "capacity": 532,
+     "berth": "宇品外貿第５バース",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    }
+   ],
+   "events": []
+  },
+  "kagoshima": {
+   "name": "マリンポートかごしま",
+   "fetched_at": "2026-10-29",
+   "source_url": "https://www.pref.kagoshima.jp/ah09/infra/port/minato/cruising/kagoshimakour8yotei.html",
+   "calls": [
+    {
+     "arr": "2026-11-01T08:30",
+     "dep": "2026-11-01T19:00",
+     "ship": "MSCベリッシマ",
+     "capacity": 4500,
+     "berth": "マリンポート かごしま",
+     "anchor": "#msc",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-02T12:00",
+     "dep": "2026-11-02T19:00",
+     "ship": "シルバー・ムーン",
+     "capacity": 596,
+     "berth": "マリンポート かごしま",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-07T09:00",
+     "dep": "2026-11-07T18:00",
+     "ship": "ダイヤモンドプリンセス",
+     "capacity": 2706,
+     "berth": "マリンポート かごしま",
+     "anchor": "#dp",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-10T08:30",
+     "dep": "2026-11-10T19:00",
+     "ship": "MSCベリッシマ",
+     "capacity": 4500,
+     "berth": "マリンポート かごしま",
+     "anchor": "#msc",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-11T08:00",
+     "dep": "2026-11-11T17:00",
+     "ship": "飛鳥Ⅲ",
+     "capacity": 744,
+     "berth": "マリンポート かごしま",
+     "anchor": "#asuka3",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-13T08:00",
+     "dep": "2026-11-13T18:00",
+     "ship": "シーボーン アンコール",
+     "capacity": 600,
+     "berth": "マリンポート かごしま",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-14T08:00",
+     "dep": "2026-11-14T16:00",
+     "ship": "MSCベリッシマ",
+     "capacity": 4500,
+     "berth": "マリンポート かごしま",
+     "anchor": "#msc",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-17T08:00",
+     "dep": "2026-11-17T20:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "マリンポート かごしま",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-18T10:30",
+     "dep": "2026-11-18T18:30",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "マリンポート かごしま",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-19T07:00",
+     "dep": "2026-11-19T16:00",
+     "ship": "ダイヤモンドプリンセス",
+     "capacity": 2706,
+     "berth": "マリンポート かごしま",
+     "anchor": "#dp",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-24T07:00",
+     "dep": "2026-11-24T14:30",
+     "ship": "ノルウェージャン・ジェイド",
+     "capacity": 2402,
+     "berth": "マリンポート かごしま",
+     "anchor": "#ncl",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-25T07:00",
+     "dep": "2026-11-25T19:00",
+     "ship": "スペクトラム オブ ザ シーズ",
+     "capacity": 4246,
+     "berth": "マリンポート かごしま",
+     "anchor": "#royal",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-27T09:00",
+     "dep": "2026-11-27T18:00",
+     "ship": "ダイヤモンドプリンセス",
+     "capacity": 2706,
+     "berth": "マリンポート かごしま",
+     "anchor": "#dp",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-28T08:00",
+     "dep": "2026-11-28T17:00",
+     "ship": "イースタン・ヴィーナス",
+     "capacity": 532,
+     "berth": "マリンポート かごしま",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-12T09:00",
+     "dep": "2026-12-12T17:00",
+     "ship": "イースタン・ヴィーナス",
+     "capacity": 532,
+     "berth": "マリンポート かごしま",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-14T09:00",
+     "dep": "2026-12-14T18:00",
+     "ship": "サファイヤプリンセス",
+     "capacity": null,
+     "berth": "マリンポート かごしま",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-25T07:00",
+     "dep": "2026-12-25T19:00",
+     "ship": "スペクトラム オブ ザ シーズ",
+     "capacity": 4246,
+     "berth": "マリンポート かごしま",
+     "anchor": "#royal",
+     "first_call": false,
+     "together": false
+    }
+   ],
+   "events": []
+  },
+  "naha_tomari8": {
+   "name": "那覇クルーズターミナル",
+   "fetched_at": "2026-10-29",
+   "source_url": "https://nacru.my.site.com/s/?NHCR_ApplicationPublic__c-filterId=X20261",
+   "calls": [
+    {
+     "arr": "2026-11-04T15:00",
+     "dep": "2026-11-04T23:59",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-05T09:00",
+     "dep": "2026-11-05T17:30",
+     "ship": "セブンシーズエクスプローラー",
+     "capacity": 732,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-08T09:00",
+     "dep": "2026-11-08T17:00",
+     "ship": "スター・シーカー",
+     "capacity": 224,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-09T15:00",
+     "dep": "2026-11-09T23:59",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-12T11:00",
+     "dep": "2026-11-12T21:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-19T15:00",
+     "dep": "2026-11-19T22:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-11-26T15:00",
+     "dep": "2026-11-26T22:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-07T13:00",
+     "dep": "2026-12-07T21:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-08T07:00",
+     "dep": "2026-12-08T18:00",
+     "ship": "アドラ マジック シティ",
+     "capacity": 5246,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-09T15:00",
+     "dep": "2026-12-09T23:59",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-14T15:00",
+     "dep": "2026-12-14T23:59",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-16T07:00",
+     "dep": "2026-12-16T19:00",
+     "ship": "サファイアプリンセス",
+     "capacity": 2670,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-17T12:00",
+     "dep": "2026-12-17T21:00",
+     "ship": "スター ナビゲーター",
+     "capacity": 1800,
+     "berth": "泊８号",
+     "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-24T11:00",
+     "dep": "2026-12-24T21:00",
+     "ship": "アドラ・メディタラニア",
+     "capacity": 2114,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    }
+   ],
+   "events": []
+  }
+ }
+}

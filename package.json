@@ -5,8 +5,9 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "test": "node --test \"test/*.test.js\"",
-    "test:ci": "node --test test/marks.test.js test/ledger.test.js test/build.test.js test/checks.test.js test/official-presale.test.js",
-    "update": "node scripts/update.js asuka3"
+    "test:ci": "node --test test/marks.test.js test/ledger.test.js test/build.test.js test/checks.test.js test/official-presale.test.js test/port-today-logic.test.js",
+    "update": "node scripts/update.js asuka3",
+    "build:port-widget": "node scripts/build-port-widget.js"
   },
   "dependencies": {
     "cheerio": "1.0.0"
