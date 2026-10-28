@@ -1,12 +1,10 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-29",
   "ship": "asuka3",
-  "published": true,
-  "failed": [
-    "his"
-  ],
+  "published": false,
+  "failed": [],
   "errors": [
-    "his: his: 公式の日程と重なる日付が0件"
+    "消失: 2026-12-17（意図的なら ALLOW_REMOVE）"
   ],
   "notes": [
     "official:102363: 発売前（価格表なし）2027-05-11"
