@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "initialized": "2026-10-03",
-  "updated": "2026-10-22",
+  "updated": "2026-10-29",
   "cruises": {
     "2026-10-23": {
       "depart": "2026-10-23",
@@ -115,7 +115,7 @@
       "depart": "2026-11-13",
       "first_seen": "2026-10-03",
       "soldout_at": null,
-      "missing_since": null,
+      "missing_since": "2026-10-29",
       "marks": {
         "official": "few",
         "his": null,
@@ -136,7 +136,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -154,7 +154,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -190,7 +190,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -208,7 +208,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -225,8 +225,8 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
-        "his": null,
+        "official": "few",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -241,7 +241,7 @@
       "depart": "2026-12-17",
       "first_seen": "2026-10-03",
       "soldout_at": null,
-      "missing_since": null,
+      "missing_since": "2026-10-29",
       "marks": {
         "official": "few",
         "his": null,
@@ -262,7 +262,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -280,7 +280,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -298,7 +298,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": null,
         "jtb": null
       },
@@ -314,7 +314,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -332,7 +332,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -350,7 +350,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -368,7 +368,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -386,7 +386,7 @@
       "missing_since": null,
       "marks": {
         "official": "few",
-        "his": null,
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -404,7 +404,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -422,7 +422,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -440,7 +440,7 @@
       "missing_since": null,
       "marks": {
         "official": "ng",
-        "his": null,
+        "his": "ng",
         "best1": null,
         "jtb": null
       },
@@ -456,7 +456,7 @@
       "missing_since": null,
       "marks": {
         "official": "few",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -474,7 +474,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -492,7 +492,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -509,8 +509,8 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
-        "his": null,
+        "official": "few",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -528,7 +528,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -546,7 +546,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -564,7 +564,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -582,7 +582,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -600,7 +600,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": null,
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -618,7 +618,7 @@
       "missing_since": null,
       "marks": {
         "official": "few",
-        "his": null,
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -646,7 +646,5 @@
       "urls": {}
     }
   },
-  "lastFailed": [
-    "his"
-  ]
+  "lastFailed": []
 }
