@@ -39,28 +39,28 @@
   function endMs(c) { return c.dep ? toMs(c.dep) : toMs(c.arr.slice(0, 10) + 'T23:59'); }
   function callsOn(calls, key) {
     var s = toMs(key + 'T00:00'), e = s + DAY;
-    return calls.filter(function (c) { return toMs(c.arr) < e && endMs(c) >= s; });
+    return calls.filter(function (c) { return e > toMs(c.arr) && endMs(c) >= s; });
   }
   function status(c, now) {
     var a = toMs(c.arr);
-    if (now < a - 2 * 3600000) return 'before';
-    if (now < a) return 'soon';
-    if (now <= endMs(c)) return 'in_port';
+    if (a - 2 * 3600000 > now) return 'before';
+    if (a > now) return 'soon';
+    if (endMs(c) >= now) return 'in_port';
     return 'departed';
   }
   function nextCall(calls, now) {
     var from = toMs(addDays(jstDayKey(now), 2) + 'T00:00');
-    for (var i = 0; i < calls.length; i++) if (toMs(calls[i].arr) >= from) return calls[i];
+    for (var i = 0; calls.length > i; i++) if (toMs(calls[i].arr) >= from) return calls[i];
     return null;
   }
   function isStale(fetchedAt, now) { return now - toMs(fetchedAt + 'T00:00') >= 8 * DAY; }
   function eventsWithin(events, now, days) {
     var k = jstDayKey(now), last = addDays(k, days);
-    return events.filter(function (e) { return e.date >= k && e.date < last; });
+    return events.filter(function (e) { return e.date >= k && last > e.date; });
   }
   function callsWithin(calls, now, days) {
     var s = toMs(jstDayKey(now) + 'T00:00'), e = s + days * DAY;
-    return calls.filter(function (c) { return toMs(c.arr) < e && endMs(c) >= s; });
+    return calls.filter(function (c) { return e > toMs(c.arr) && endMs(c) >= s; });
   }
   return { toMs: toMs, jstDayKey: jstDayKey, addDays: addDays, callsOn: callsOn, status: status,
     nextCall: nextCall, isStale: isStale, eventsWithin: eventsWithin, callsWithin: callsWithin };
