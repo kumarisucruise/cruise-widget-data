@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-29T07:17+09:00",
+ "generated_at": "2026-11-02T08:07+09:00",
  "ports": {
   "hiroshima": {
    "name": "広島港",
-   "fetched_at": "2026-10-29",
+   "fetched_at": "2026-11-02",
    "source_url": "https://www.pref.hiroshima.lg.jp/soshiki/221/cruise-joho.html",
    "calls": [
     {
@@ -131,19 +131,9 @@
   },
   "kagoshima": {
    "name": "マリンポートかごしま",
-   "fetched_at": "2026-10-29",
+   "fetched_at": "2026-11-02",
    "source_url": "https://www.pref.kagoshima.jp/ah09/infra/port/minato/cruising/kagoshimakour8yotei.html",
    "calls": [
-    {
-     "arr": "2026-11-01T08:30",
-     "dep": "2026-11-01T19:00",
-     "ship": "MSCベリッシマ",
-     "capacity": 4500,
-     "berth": "マリンポート かごしま",
-     "anchor": "#msc",
-     "first_call": false,
-     "together": false
-    },
     {
      "arr": "2026-11-02T12:00",
      "dep": "2026-11-02T19:00",
@@ -309,7 +299,7 @@
   },
   "naha_tomari8": {
    "name": "那覇クルーズターミナル",
-   "fetched_at": "2026-10-29",
+   "fetched_at": "2026-11-02",
    "source_url": "https://nacru.my.site.com/s/?NHCR_ApplicationPublic__c-filterId=X20261",
    "calls": [
     {
@@ -445,6 +435,26 @@
     {
      "arr": "2026-12-24T11:00",
      "dep": "2026-12-24T21:00",
+     "ship": "アドラ・メディタラニア",
+     "capacity": 2114,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-29T07:00",
+     "dep": "2026-12-29T20:00",
+     "ship": "アドラ マジック シティ",
+     "capacity": 5246,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2026-12-30T08:00",
+     "dep": "2026-12-30T17:00",
      "ship": "アドラ・メディタラニア",
      "capacity": 2114,
      "berth": "泊８号",
