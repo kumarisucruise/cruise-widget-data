@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "label": "飛鳥III",
-  "updated": "2026-10-29",
+  "updated": "2026-11-05",
   "staleDays": 10,
   "agents": [
     {
@@ -21,23 +21,6 @@
     }
   ],
   "cruises": [
-    {
-      "depart": "2026-11-23",
-      "days": 7,
-      "port": "横浜",
-      "course": "〜知の賢人× ASUKAⅢ〜 錦秋の瀬戸内 姫路・防府クルーズ",
-      "new": false,
-      "st": {
-        "his": "ok",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_111931.html",
-        "jtb": null
-      }
-    },
     {
       "depart": "2026-11-29",
       "days": 4,
@@ -426,6 +409,516 @@
       "link": {
         "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D_YOK_111993.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-04-29",
+      "days": 11,
+      "port": "横浜",
+      "course": "ゴールデンウィーク 台湾周遊クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_11D_YOK_120830.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-05-11",
+      "days": 24,
+      "port": "横浜",
+      "course": "～飛鳥クルーズ就航35周年記念～2027年 日本一周 ディスカバリークルーズ",
+      "new": false,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_24D_YOK_120989.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-05",
+      "days": 6,
+      "port": "神戸",
+      "course": "神戸発着 紺碧の小笠原クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D__120954.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-11",
+      "days": 4,
+      "port": "横浜",
+      "course": "初夏彩る 蒲郡ウィークエンドクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_120833.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-14",
+      "days": 6,
+      "port": "横浜",
+      "course": "紺碧の小笠原クルーズ A",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120955.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-19",
+      "days": 3,
+      "port": "横浜",
+      "course": "初夏の週末 横浜ショートクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_YOK_120815.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-21",
+      "days": 7,
+      "port": "横浜",
+      "course": "潮風薫る 別府・広島 しまなみ周遊クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_7D_YOK_120999.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-06-27",
+      "days": 6,
+      "port": "横浜",
+      "course": "紺碧の小笠原クルーズ B",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120956.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-02",
+      "days": 6,
+      "port": "横浜",
+      "course": "夏の門司・釜山クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120998.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-08",
+      "days": 6,
+      "port": "横浜",
+      "course": "紺碧の小笠原クルーズ C",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120834.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-14",
+      "days": 8,
+      "port": "横浜",
+      "course": "夏彩る 函館・能代・仙台クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D_YOK_120835.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-22",
+      "days": 5,
+      "port": "横浜",
+      "course": "夏彩る 鳥羽花火・日高クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_YOK_120957.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-26",
+      "days": 6,
+      "port": "横浜",
+      "course": "夏の北海道 釧路・室蘭クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120975.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-07-31",
+      "days": 6,
+      "port": "横浜",
+      "course": "能代天空の不夜城・青森ねぶた祭クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_YOK_120836.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-06",
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 夏彩る 小名浜花火・神戸クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_120840.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-09",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 伊東花火クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_120839.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-12",
+      "days": 5,
+      "port": "神戸",
+      "course": "神戸発着 関門海峡花火クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_UKB_121000.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-16",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 熊野大花火クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_UKB_121001.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-19",
+      "days": 3,
+      "port": "神戸",
+      "course": "夏の神戸・東京ショートクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_UKB_120816.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-21",
+      "days": 3,
+      "port": "東京",
+      "course": "夏の週末 東京ショートクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_TYO_120817.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-23",
+      "days": 9,
+      "port": "東京",
+      "course": "夏の北海道クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_9D_TYO_121006.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-08-31",
+      "days": 4,
+      "port": "横浜",
+      "course": "横浜発 初秋の防府・博多クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_YOK_120818.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-06",
+      "days": 5,
+      "port": "博多",
+      "course": "博多発着 初秋の宮津・境港クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_5D_HKP_121009.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-10",
+      "days": 3,
+      "port": "博多",
+      "course": "初秋の博多・名古屋ショートクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_HKP_120819.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-13",
+      "days": 6,
+      "port": "名古屋",
+      "course": "名古屋発着 瀬戸内航路 種子島・周防大島クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_NGP_120977.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-18",
+      "days": 4,
+      "port": "名古屋",
+      "course": "名古屋発着 秋彩る 姫路花火クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_NGP_121010.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-23",
+      "days": 4,
+      "port": "神戸",
+      "course": "神戸発着 秋の休日 高知クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__120979.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-09-26",
+      "days": 8,
+      "port": "神戸",
+      "course": "神戸発着 秋風薫る 北海道・みちのくクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_8D__120980.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-10-04",
+      "days": 6,
+      "port": "神戸",
+      "course": "神戸発着 秋の西海 唐津・長崎クルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_6D_UKB_121011.html",
+        "jtb": null
+      }
+    },
+    {
+      "depart": "2027-10-09",
+      "days": 3,
+      "port": "神戸",
+      "course": "秋の連休 神戸ショートクルーズ",
+      "new": true,
+      "st": {
+        "his": null,
+        "best1": "ans",
+        "jtb": null
+      },
+      "link": {
+        "his": null,
+        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_3D_UKB_120821.html",
         "jtb": null
       }
     }
