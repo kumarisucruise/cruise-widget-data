@@ -1,12 +1,9 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "ship": "asuka3",
   "published": false,
-  "failed": [
-    "best1"
-  ],
+  "failed": [],
   "errors": [
-    "best1: fetch failed",
     "消失: 2027-02-08（意図的なら ALLOW_REMOVE）"
   ],
   "notes": []
