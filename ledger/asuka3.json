@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "initialized": "2026-10-03",
-  "updated": "2026-11-12",
+  "updated": "2026-11-20",
   "cruises": {
     "2026-10-23": {
       "depart": "2026-10-23",
@@ -133,7 +133,7 @@
       "depart": "2026-11-23",
       "first_seen": "2026-10-03",
       "soldout_at": "2026-11-05",
-      "missing_since": null,
+      "missing_since": "2026-11-20",
       "marks": {
         "official": null,
         "his": "ng",
@@ -151,7 +151,7 @@
       "depart": "2026-11-29",
       "first_seen": "2026-10-03",
       "soldout_at": "2026-11-12",
-      "missing_since": null,
+      "missing_since": "2026-11-20",
       "marks": {
         "official": "ok",
         "his": "ng",
@@ -169,7 +169,7 @@
       "depart": "2026-12-03",
       "first_seen": "2026-10-03",
       "soldout_at": "2026-10-15",
-      "missing_since": null,
+      "missing_since": "2026-11-20",
       "marks": {
         "official": "ok",
         "his": null,
@@ -186,11 +186,11 @@
     "2026-12-08": {
       "depart": "2026-12-08",
       "first_seen": "2026-10-03",
-      "soldout_at": null,
+      "soldout_at": "2026-11-20",
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ng",
         "best1": "ans",
         "jtb": null
       },
@@ -280,7 +280,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -314,7 +314,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -383,7 +383,7 @@
       "depart": "2027-02-08",
       "first_seen": "2026-10-03",
       "soldout_at": null,
-      "missing_since": null,
+      "missing_since": "2026-11-20",
       "marks": {
         "official": "few",
         "his": "ans",
@@ -437,7 +437,7 @@
       "depart": "2027-02-16",
       "first_seen": "2026-10-03",
       "soldout_at": "2026-10-03",
-      "missing_since": null,
+      "missing_since": "2026-11-20",
       "marks": {
         "official": "ng",
         "his": "ng",
@@ -546,7 +546,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -581,8 +581,8 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
-        "his": "ans",
+        "official": "few",
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -636,7 +636,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ans",
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -852,7 +852,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -995,7 +995,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
+        "official": "ng",
         "his": "ok",
         "best1": "ans",
         "jtb": null
@@ -1031,7 +1031,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
+        "official": "ng",
         "his": "ans",
         "best1": null,
         "jtb": null

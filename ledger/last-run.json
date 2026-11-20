@@ -1,10 +1,8 @@
 {
   "date": "2026-11-20",
   "ship": "asuka3",
-  "published": false,
+  "published": true,
   "failed": [],
-  "errors": [
-    "消失: 2027-02-08（意図的なら ALLOW_REMOVE）"
-  ],
+  "errors": [],
   "notes": []
 }

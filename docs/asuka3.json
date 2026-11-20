@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "label": "飛鳥III",
-  "updated": "2026-11-12",
+  "updated": "2026-11-20",
   "staleDays": 10,
   "agents": [
     {
@@ -21,23 +21,6 @@
     }
   ],
   "cruises": [
-    {
-      "depart": "2026-12-08",
-      "days": 4,
-      "port": "神戸",
-      "course": "Xmas 神戸発着 高知クルーズ",
-      "new": false,
-      "st": {
-        "his": "ok",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111865.html",
-        "jtb": null
-      }
-    },
     {
       "depart": "2026-12-13",
       "days": 3,
@@ -96,7 +79,7 @@
       "course": "Xmas 横浜発着 四日市クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -130,7 +113,7 @@
       "course": "横浜発 新春の駿河・神戸クルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -188,23 +171,6 @@
       "link": {
         "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
         "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D_HKP_111878.html",
-        "jtb": null
-      }
-    },
-    {
-      "depart": "2027-02-08",
-      "days": 4,
-      "port": "横浜",
-      "course": "早春の四日市クルーズ",
-      "new": false,
-      "st": {
-        "his": "ans",
-        "best1": "ans",
-        "jtb": null
-      },
-      "link": {
-        "his": "https://t.afi-b.com/visit.php?a=Q10113i-e4809260_h&p=m9111287",
-        "best1": "https://px.a8.net/svt/ejp?a8mat=3T4D8E+9FYJ76+2VWA+BW8O2&a8ejpredirect=https%3A%2F%2Fwww.best1cruise.com%2FB%2FASUKATH%2FNI__ASUKATH_ASUTH_4D__111996.html",
         "jtb": null
       }
     },
@@ -317,7 +283,7 @@
       "course": "春彩る 駿河ウィークエンドクルーズ",
       "new": false,
       "st": {
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -351,7 +317,7 @@
       "course": "陽春の週末 鳥羽クルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -400,7 +366,7 @@
       "days": 11,
       "port": "横浜",
       "course": "ゴールデンウィーク 台湾周遊クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -419,7 +385,7 @@
       "course": "～飛鳥クルーズ就航35周年記念～2027年 日本一周 ディスカバリークルーズ",
       "new": false,
       "st": {
-        "his": "ans",
+        "his": "ok",
         "best1": "ans",
         "jtb": null
       },
@@ -434,7 +400,7 @@
       "days": 6,
       "port": "神戸",
       "course": "神戸発着 紺碧の小笠原クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -451,7 +417,7 @@
       "days": 4,
       "port": "横浜",
       "course": "初夏彩る 蒲郡ウィークエンドクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -468,7 +434,7 @@
       "days": 6,
       "port": "横浜",
       "course": "紺碧の小笠原クルーズ A",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -485,7 +451,7 @@
       "days": 3,
       "port": "横浜",
       "course": "初夏の週末 横浜ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -502,7 +468,7 @@
       "days": 7,
       "port": "横浜",
       "course": "潮風薫る 別府・広島 しまなみ周遊クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -519,7 +485,7 @@
       "days": 6,
       "port": "横浜",
       "course": "紺碧の小笠原クルーズ B",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -536,7 +502,7 @@
       "days": 6,
       "port": "横浜",
       "course": "夏の門司・釜山クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ans",
         "best1": "ans",
@@ -553,7 +519,7 @@
       "days": 6,
       "port": "横浜",
       "course": "紺碧の小笠原クルーズ C",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -570,7 +536,7 @@
       "days": 8,
       "port": "横浜",
       "course": "夏彩る 函館・能代・仙台クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -587,7 +553,7 @@
       "days": 5,
       "port": "横浜",
       "course": "夏彩る 鳥羽花火・日高クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ans",
         "best1": "ans",
@@ -604,9 +570,9 @@
       "days": 6,
       "port": "横浜",
       "course": "夏の北海道 釧路・室蘭クルーズ",
-      "new": true,
+      "new": false,
       "st": {
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -621,7 +587,7 @@
       "days": 6,
       "port": "横浜",
       "course": "能代天空の不夜城・青森ねぶた祭クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -638,7 +604,7 @@
       "days": 4,
       "port": "横浜",
       "course": "横浜発 夏彩る 小名浜花火・神戸クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -655,7 +621,7 @@
       "days": 4,
       "port": "神戸",
       "course": "神戸発着 伊東花火クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -672,7 +638,7 @@
       "days": 5,
       "port": "神戸",
       "course": "神戸発着 関門海峡花火クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -689,7 +655,7 @@
       "days": 4,
       "port": "神戸",
       "course": "神戸発着 熊野大花火クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ans",
         "best1": "ans",
@@ -706,7 +672,7 @@
       "days": 3,
       "port": "神戸",
       "course": "夏の神戸・東京ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -723,7 +689,7 @@
       "days": 3,
       "port": "東京",
       "course": "夏の週末 東京ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -740,7 +706,7 @@
       "days": 9,
       "port": "東京",
       "course": "夏の北海道クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -757,7 +723,7 @@
       "days": 4,
       "port": "横浜",
       "course": "横浜発 初秋の防府・博多クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -774,7 +740,7 @@
       "days": 4,
       "port": "博多",
       "course": "博多発着 韓国めぐり 釜山・済州クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ans",
         "best1": null,
@@ -791,7 +757,7 @@
       "days": 5,
       "port": "博多",
       "course": "博多発着 初秋の宮津・境港クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -808,7 +774,7 @@
       "days": 3,
       "port": "博多",
       "course": "初秋の博多・名古屋ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -825,7 +791,7 @@
       "days": 6,
       "port": "名古屋",
       "course": "名古屋発着 瀬戸内航路 種子島・周防大島クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -842,7 +808,7 @@
       "days": 4,
       "port": "名古屋",
       "course": "名古屋発着 秋彩る 姫路花火クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ans",
         "best1": "ans",
@@ -859,7 +825,7 @@
       "days": 3,
       "port": "名古屋",
       "course": "初秋の名古屋・神戸ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": null,
@@ -876,7 +842,7 @@
       "days": 4,
       "port": "神戸",
       "course": "神戸発着 秋の休日 高知クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -893,7 +859,7 @@
       "days": 8,
       "port": "神戸",
       "course": "神戸発着 秋風薫る 北海道・みちのくクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -910,7 +876,7 @@
       "days": 6,
       "port": "神戸",
       "course": "神戸発着 秋の西海 唐津・長崎クルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
@@ -927,7 +893,7 @@
       "days": 3,
       "port": "神戸",
       "course": "秋の連休 神戸ショートクルーズ",
-      "new": true,
+      "new": false,
       "st": {
         "his": "ok",
         "best1": "ans",
