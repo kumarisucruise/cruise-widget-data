@@ -44,7 +44,14 @@ test('404はやり直さずすぐ失敗する', async () => {
 
 test('応答が来ないときは打ち切って、やり直す', async () => {
   await withFetch((n, url, init) => {
-    if (n === 0) return new Promise((_, rej) => init.signal.addEventListener('abort', () => rej(init.signal.reason)));
+    if (n === 0) {
+      // Node 20 は打ち切りタイマーが「処理の終わり待ち」に数えられないので、テスト側で生かしておく
+      const keepAlive = setTimeout(() => {}, 10000);
+      return new Promise((_, rej) => init.signal.addEventListener('abort', () => {
+        clearTimeout(keepAlive);
+        rej(init.signal.reason);
+      }));
+    }
     return ok('late');
   }, async (calls) => {
     const r = await get('http://x/', { ...fast, timeoutMs: 20 });
