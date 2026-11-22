@@ -1,26 +1,16 @@
 {
- "generated_at": "2026-11-16T06:11+09:00",
+ "generated_at": "2026-11-22T09:01+09:00",
  "ports": {
   "hiroshima": {
    "name": "広島港",
-   "fetched_at": "2026-11-16",
+   "fetched_at": "2026-11-22",
    "source_url": "https://www.pref.hiroshima.lg.jp/soshiki/221/cruise-joho.html",
    "calls": [
-    {
-     "arr": "2026-11-17T07:00",
-     "dep": "2026-11-17T16:00",
-     "ship": "ノルウェージャン・ジェイド",
-     "capacity": 2402,
-     "berth": "宇品外貿第５バース",
-     "anchor": "#ncl",
-     "first_call": false,
-     "together": false
-    },
     {
      "arr": "2026-11-25T09:00",
      "dep": "2026-11-25T18:00",
      "ship": "ノルウェージャン・ジェイド",
-     "capacity": 2402,
+     "capacity": 2352,
      "berth": "宇品外貿第５バース",
      "anchor": "#ncl",
      "first_call": false,
@@ -30,7 +20,7 @@
      "arr": "2026-12-04T07:00",
      "dep": "2026-12-04T16:00",
      "ship": "ノルウェージャン・ジェイド",
-     "capacity": 2402,
+     "capacity": 2352,
      "berth": "宇品外貿第５バース",
      "anchor": "#ncl",
      "first_call": false,
@@ -50,7 +40,7 @@
      "arr": "2026-12-19T09:30",
      "dep": "2026-12-19T20:00",
      "ship": "イースタン・ヴィーナス",
-     "capacity": 532,
+     "capacity": 720,
      "berth": "宇品外貿第５バース",
      "anchor": "",
      "first_call": false,
@@ -70,7 +60,7 @@
      "arr": "2026-12-26T08:30",
      "dep": "2026-12-26T20:00",
      "ship": "イースタン・ヴィーナス",
-     "capacity": 532,
+     "capacity": 720,
      "berth": "宇品外貿第５バース",
      "anchor": "",
      "first_call": false,
@@ -81,39 +71,9 @@
   },
   "kagoshima": {
    "name": "マリンポートかごしま",
-   "fetched_at": "2026-11-16",
+   "fetched_at": "2026-11-22",
    "source_url": "https://www.pref.kagoshima.jp/ah09/infra/port/minato/cruising/kagoshimakour8yotei.html",
    "calls": [
-    {
-     "arr": "2026-11-17T08:00",
-     "dep": "2026-11-17T20:00",
-     "ship": "スター ナビゲーター",
-     "capacity": 1800,
-     "berth": "マリンポート かごしま",
-     "anchor": "#sn",
-     "first_call": false,
-     "together": false
-    },
-    {
-     "arr": "2026-11-18T10:30",
-     "dep": "2026-11-18T18:30",
-     "ship": "ノルウェージャン・ジェイド",
-     "capacity": 2402,
-     "berth": "マリンポート かごしま",
-     "anchor": "#ncl",
-     "first_call": false,
-     "together": false
-    },
-    {
-     "arr": "2026-11-19T07:00",
-     "dep": "2026-11-19T16:00",
-     "ship": "ダイヤモンドプリンセス",
-     "capacity": 2706,
-     "berth": "マリンポート かごしま",
-     "anchor": "#dp",
-     "first_call": false,
-     "together": false
-    },
     {
      "arr": "2026-11-24T07:00",
      "dep": "2026-11-24T14:30",
@@ -189,19 +149,9 @@
   },
   "naha_tomari8": {
    "name": "那覇クルーズターミナル",
-   "fetched_at": "2026-11-16",
+   "fetched_at": "2026-11-22",
    "source_url": "https://nacru.my.site.com/s/?NHCR_ApplicationPublic__c-filterId=X20261",
    "calls": [
-    {
-     "arr": "2026-11-19T15:00",
-     "dep": "2026-11-19T22:00",
-     "ship": "スター ナビゲーター",
-     "capacity": 1800,
-     "berth": "泊８号",
-     "anchor": "#sn",
-     "first_call": false,
-     "together": false
-    },
     {
      "arr": "2026-11-26T15:00",
      "dep": "2026-11-26T22:00",
@@ -359,6 +309,26 @@
      "capacity": 1800,
      "berth": "泊８号",
      "anchor": "#sn",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2027-01-15T08:00",
+     "dep": "2027-01-15T18:00",
+     "ship": "アドラ・メディタラニア",
+     "capacity": 2114,
+     "berth": "泊８号",
+     "anchor": "",
+     "first_call": false,
+     "together": false
+    },
+    {
+     "arr": "2027-01-19T08:00",
+     "dep": "2027-01-19T18:00",
+     "ship": "アドラ・メディタラニア",
+     "capacity": 2114,
+     "berth": "泊８号",
+     "anchor": "",
      "first_call": false,
      "together": false
     }
