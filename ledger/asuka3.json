@@ -1,7 +1,7 @@
 {
   "ship": "asuka3",
   "initialized": "2026-10-03",
-  "updated": "2026-11-20",
+  "updated": "2026-11-26",
   "cruises": {
     "2026-10-23": {
       "depart": "2026-10-23",
@@ -187,7 +187,7 @@
       "depart": "2026-12-08",
       "first_seen": "2026-10-03",
       "soldout_at": "2026-11-20",
-      "missing_since": null,
+      "missing_since": "2026-11-26",
       "marks": {
         "official": "ok",
         "his": "ng",
@@ -204,11 +204,11 @@
     "2026-12-13": {
       "depart": "2026-12-13",
       "first_seen": "2026-10-03",
-      "soldout_at": null,
+      "soldout_at": "2026-11-26",
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ng",
         "best1": "ans",
         "jtb": null
       },
@@ -222,11 +222,11 @@
     "2026-12-15": {
       "depart": "2026-12-15",
       "first_seen": "2026-10-03",
-      "soldout_at": null,
+      "soldout_at": "2026-11-26",
       "missing_since": null,
       "marks": {
-        "official": "ok",
-        "his": "ans",
+        "official": "few",
+        "his": "ng",
         "best1": "ans",
         "jtb": null
       },
@@ -491,7 +491,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
+        "official": "few",
         "his": "ans",
         "best1": "ans",
         "jtb": null
@@ -599,7 +599,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
+        "official": "few",
         "his": "ok",
         "best1": "ans",
         "jtb": null
@@ -762,7 +762,7 @@
       "missing_since": null,
       "marks": {
         "official": "ok",
-        "his": "ok",
+        "his": "ans",
         "best1": "ans",
         "jtb": null
       },
@@ -797,7 +797,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ok",
+        "official": "ng",
         "his": "ok",
         "best1": "ans",
         "jtb": null
@@ -1031,7 +1031,7 @@
       "soldout_at": null,
       "missing_since": null,
       "marks": {
-        "official": "ng",
+        "official": "few",
         "his": "ans",
         "best1": null,
         "jtb": null
